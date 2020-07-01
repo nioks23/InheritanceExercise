@@ -8,17 +8,27 @@ namespace Inheritance
         {
             // TODO Be sure to follow best practice when creating your classes
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+
+            var tropicalBird = new Bird();
+
+            tropicalBird.Color = "multicolor";
+            tropicalBird.Name = "Mango";
+            tropicalBird.Wings = "long";
+            tropicalBird.Weight = 3;
+
+            Console.WriteLine($"My bird is named {tropicalBird.Name} and {tropicalBird.Fly()}");
 
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            var snake = new Reptile();
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
+            snake.Name = "Bingo";
+            snake.Length = 6;
+            snake.Venimous = true;
+            snake.Color = "green";
+
+            Console.WriteLine($"I have a snake called {snake.Name} and is {snake.Length} feet long " + 
+                $"oh and by the way has {snake.Color} color and {snake.Crawl()} in the backyard" );
+
 
 
 
